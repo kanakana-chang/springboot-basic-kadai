@@ -1,6 +1,6 @@
-/* rolesテーブル */
-INSERT IGNORE INTO roles (id, name) VALUES (1, 'ROLE_GENERAL');
-
-/* usersテーブル */
-INSERT IGNORE INTO users (id, name, email, password, role_id, enabled) VALUES (1, '侍 太郎', 'taro.samurai@example.com', '$2a$10$2JNjTwZBwo7fprL2X4sv.OEKqxnVtsVQvuXDkI8xVGix.U3W5B7CO', 1, true);
-INSERT IGNORE INTO users (id, name, email, password, role_id, enabled) VALUES (2, '侍 二郎', 'jiro.samurai@example.com', '$2a$10$2JNjTwZBwo7fprL2X4sv.OEKqxnVtsVQvuXDkI8xVGix.U3W5B7CO', 1, true);
+INSERT IGNORE INTO todos (id, title, priority, status) VALUES 
+  (1, '売上レポートの作成', '高', '着手中'),
+  (2, '定例会議への参加', '中', '未着手'),
+  (3, '提案書の作成', '高', '着手中'),
+  (4, '顧客フィードバックの分析', '中', '未着手'),
+  (5, '新人トレーニング計画の作成', '低', '未着手');
