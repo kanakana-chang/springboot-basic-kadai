@@ -16,7 +16,7 @@ public class ToDoController {
 	public ToDoController(ToDoService todoService) {
 		this.todoService=todoService;
 	}
-	@GetMapping("/")
+	@GetMapping("/todo")
 	public String todo(Model model) {
 		List<ToDo> todos=todoService.getAllToDo();
 		model.addAttribute("todos",todos);
